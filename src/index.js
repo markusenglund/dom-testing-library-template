@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function Counter() {
-  const [count, setCount] = React.useState(0)
-  const increment = () => setCount(c => c + 1)
-  return <button onClick={increment}>{count}</button>
-}
+const ComponentWithPrefixedStyles = () => (
+  <div
+    style={{
+      background: "red",
+      WebkitTapHighlightColor: "rgba(0, 0, 0, 0)",
+      WebkitUserSelect: "none",
+      MozUserSelect: "none",
+      msUserSelect: "none",
+      userSelect: "none"
+    }}
+  >
+    Hello
+  </div>
+);
 
-export default Counter
+export default ComponentWithPrefixedStyles;
